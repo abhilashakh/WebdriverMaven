@@ -31,7 +31,7 @@ public class LoginTest {
 		
 		driver.get("http://gmail.com");
 		driver.findElement(By.id("identifierId")).sendKeys("trainer@way2automation.com");
-		driver.findElement(By.linkText("Learn more")).click();
+		driver.findElement(By.linkText("Learn are more")).click(); // trying to fail the build by giving wrong link text in Jenkins
 		
 		
 		//Added new comments
