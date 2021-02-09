@@ -33,6 +33,9 @@ public class LoginTest {
 		driver.findElement(By.id("identifierId")).sendKeys("trainer@way2automation.com");
 		driver.findElement(By.linkText("Learn more")).click();
 		
+		
+		//Added new comments
+		
 	}
 	
 	
