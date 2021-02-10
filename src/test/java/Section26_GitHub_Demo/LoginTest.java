@@ -1,18 +1,13 @@
 package Section26_GitHub_Demo;
 
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.Test;
-
-import io.github.bonigarcia.wdm.WebDriverManager;
-
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeSuite;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 
 public class LoginTest {
@@ -31,7 +26,7 @@ public class LoginTest {
 		
 		driver.get("http://gmail.com");
 		driver.findElement(By.id("identifierId")).sendKeys("trainer@way2automation.com");
-		driver.findElement(By.linkText("Learn are more")).click(); // trying to fail the build by giving wrong link text in Jenkins
+		driver.findElement(By.linkText("Learn is more")).click(); // trying to fail the build by giving wrong link text in Jenkins
 		
 		
 		//Added new comments
